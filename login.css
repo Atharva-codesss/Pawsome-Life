@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background image styling */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Container styling for login and registration form */
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  backdrop-filter: blur(20px);
+  text-align: center;
+}
+
+/* Main Heading for Pawsome Life */
+.main-heading {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 42px;
+  color: #60c88a;
+  margin-bottom: 30px;
+}
+
+/* Form Headings */
+#login-section h2, #registration-section h2 {
+  font-family: "Rubik Bubbles", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: #60c88a;
+  margin-bottom: 20px;
+}
+
+/* Input box styling */
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input, .input-box select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus, .input-box select:focus {
+  border-bottom-color: #60c88a;
+}
+
+.input-box label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 16px;
+  color: #777;
+  transition: 0.3s;
+}
+
+.input-box input:focus + label, .input-box input:not(:placeholder-shown) + label, .input-box select:focus + label {
+  top: -20px;
+  font-size: 12px;
+  color: #00451c;
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #60c88a;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #50a072;
+}
+
+/* Extra links for login/register toggle */
+.extra-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.extra-links p {
+  color: #7ba343;
+}
+
+.extra-links a {
+  color: #60c88a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.extra-links a:hover {
+  color: #50a072;
+  text-decoration: underline;
+}
