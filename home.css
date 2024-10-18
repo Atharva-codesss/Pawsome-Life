@@ -100,6 +100,13 @@ body{
     background-size: 100% 100%;
 }
 
+.hero-section .container .logo-container{
+    width: 900px; /* Adjust size of the main logo */
+    position: absolute;
+    right: -10px; /* Move to the right (increase for more right shift) */
+    top: -50px; 
+}
+
 .hero-section .container{
     position: absolute;
     top: 20%;
@@ -110,6 +117,24 @@ body{
 
 .hero-section .container .hero-text{
   color: #0d3b05;
+}
+
+.pawsome-logo {
+    width: 750px; /* Adjust size of the main logo */
+    position: absolute;
+    right: -650px; /* Move to the right (increase for more right shift) */
+    top: 90px;   /* Move upwards (increase for more upward shift) */
+
+}
+
+.pet-overlay {
+    position: absolute;
+    right: 400px; /* Move to the right (increase for more right shift) */
+    top: -30px;   /* Move upwards (increase for more upward shift) */
+    width: 300px; /* Adjust this to control the size of the pet image */
+    height: auto;
+    z-index: 2;   /* Ensures it's on top of the content below */
+    border-radius: 10px; /* Optional: Adjusts corner radius */
 }
 
 .hero-section .container .hero-text h4{
@@ -126,6 +151,8 @@ body{
     font-size: 17px;
     margin: 30px 0;
     width: 100%;
+
+
 
 }
 
@@ -172,6 +199,7 @@ button {
     position: absolute;
     right: 0;
 }
+
 
 .hero-section .logo img{
     width: 300px;
@@ -241,6 +269,8 @@ button {
     background: #173a13;
     width: 100%;
     padding: 50px;
+    position: absolute;
+    top: 1250px;
 } 
 .adoption-form .container{
     background: rgb(91, 208, 186);
@@ -270,10 +300,10 @@ button {
 }
 
 .footer-section {
-    position: st;
+    position: absolute;
     width: 100%;
     background: #dbd8d8;
-    bottom: 0; 
+    bottom: -1280px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,9 +313,9 @@ button {
     z-index: 1000; 
 }
 
-.footer-top{
-    background: #c95f5f;
-    width: 97%;
+
+.footer-section .footer-top .container{
+    width:94% ;
     margin: 0 auto;
 }
 
@@ -295,4 +325,118 @@ button {
     gap: 50px;
     padding: 20px;
     flex-wrap: wrap;
+}
+.footer-top, .footer-bottom{
+    background: #000000;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.footer-section .footer-top .container .row .col div{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* General Footer Styles */
+.footer-section {
+    background-color: #000000; /* Footer background color */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-top {
+    padding-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Column styles */
+.col {
+    flex: 1; /* Each column will take up equal space */
+    margin: 0 20px;
+}
+
+.col-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.col-line {
+    list-style: none;
+    padding: 0;
+}
+
+.col-line li {
+    margin-bottom: 8px;
+}
+
+.col-line a {
+    color: white;
+    text-decoration:none;
+}
+
+.col-line a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-logo h2 img {
+    max-width: 150px;
+    height: auto;
+}
+
+.address-text {
+    margin: 10px 0;
+}
+
+/* Social Icon Styles */
+.social-icon a {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.social-icon a:hover {
+    color: #79dd36; /* Highlight color on hover */
+}
+
+/* Copyright Styles */
+.copyright {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-bottom hr {
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        text-align: center;
+    }
+
+    .col {
+        margin-bottom: 20px; /* Add space between columns */
+    }
 }
